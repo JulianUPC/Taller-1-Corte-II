@@ -8,6 +8,7 @@ namespace Entidades
 {
     public class Régimen_contributivo : Paciente
     {
+
         public float Cuota_ModeradaContributivo { get; set; }
 
         public Régimen_contributivo(float cuota_Moderadacontributivo)
