@@ -1,0 +1,11 @@
+C:\Users\Angel Barrueto\Documents\Taller Viernes\IPS MAS SALUD Y VIDA\Logica\bin\Debug\Logica.dll
+C:\Users\Angel Barrueto\Documents\Taller Viernes\IPS MAS SALUD Y VIDA\Logica\bin\Debug\Logica.pdb
+C:\Users\Angel Barrueto\Documents\Taller Viernes\IPS MAS SALUD Y VIDA\Logica\bin\Debug\Datos.dll
+C:\Users\Angel Barrueto\Documents\Taller Viernes\IPS MAS SALUD Y VIDA\Logica\bin\Debug\Entidades.dll
+C:\Users\Angel Barrueto\Documents\Taller Viernes\IPS MAS SALUD Y VIDA\Logica\bin\Debug\Datos.pdb
+C:\Users\Angel Barrueto\Documents\Taller Viernes\IPS MAS SALUD Y VIDA\Logica\bin\Debug\Entidades.pdb
+C:\Users\Angel Barrueto\Documents\Taller Viernes\IPS MAS SALUD Y VIDA\Logica\obj\Debug\Logica.csproj.AssemblyReference.cache
+C:\Users\Angel Barrueto\Documents\Taller Viernes\IPS MAS SALUD Y VIDA\Logica\obj\Debug\Logica.csproj.CoreCompileInputs.cache
+C:\Users\Angel Barrueto\Documents\Taller Viernes\IPS MAS SALUD Y VIDA\Logica\obj\Debug\Logica.csproj.CopyComplete
+C:\Users\Angel Barrueto\Documents\Taller Viernes\IPS MAS SALUD Y VIDA\Logica\obj\Debug\Logica.dll
+C:\Users\Angel Barrueto\Documents\Taller Viernes\IPS MAS SALUD Y VIDA\Logica\obj\Debug\Logica.pdb

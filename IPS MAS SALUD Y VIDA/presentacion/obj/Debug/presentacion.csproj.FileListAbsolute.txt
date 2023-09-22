@@ -6,3 +6,16 @@ C:\Users\Angel Barrueto\Documents\Parcial 1 corte\IPS MAS SALUD Y VIDA\presentac
 C:\Users\Angel Barrueto\Documents\Parcial 1 corte\IPS MAS SALUD Y VIDA\presentacion\obj\Debug\presentacion.csproj.CoreCompileInputs.cache
 C:\Users\Angel Barrueto\Documents\Parcial 1 corte\IPS MAS SALUD Y VIDA\presentacion\obj\Debug\presentacion.exe
 C:\Users\Angel Barrueto\Documents\Parcial 1 corte\IPS MAS SALUD Y VIDA\presentacion\obj\Debug\presentacion.pdb
+C:\Users\Angel Barrueto\Documents\Taller Viernes\IPS MAS SALUD Y VIDA\presentacion\bin\Debug\presentacion.exe.config
+C:\Users\Angel Barrueto\Documents\Taller Viernes\IPS MAS SALUD Y VIDA\presentacion\bin\Debug\presentacion.exe
+C:\Users\Angel Barrueto\Documents\Taller Viernes\IPS MAS SALUD Y VIDA\presentacion\bin\Debug\presentacion.pdb
+C:\Users\Angel Barrueto\Documents\Taller Viernes\IPS MAS SALUD Y VIDA\presentacion\bin\Debug\Entidades.dll
+C:\Users\Angel Barrueto\Documents\Taller Viernes\IPS MAS SALUD Y VIDA\presentacion\bin\Debug\Logica.dll
+C:\Users\Angel Barrueto\Documents\Taller Viernes\IPS MAS SALUD Y VIDA\presentacion\bin\Debug\Entidades.pdb
+C:\Users\Angel Barrueto\Documents\Taller Viernes\IPS MAS SALUD Y VIDA\presentacion\bin\Debug\Logica.pdb
+C:\Users\Angel Barrueto\Documents\Taller Viernes\IPS MAS SALUD Y VIDA\presentacion\obj\Debug\presentacion.csproj.AssemblyReference.cache
+C:\Users\Angel Barrueto\Documents\Taller Viernes\IPS MAS SALUD Y VIDA\presentacion\obj\Debug\presentacion.csproj.SuggestedBindingRedirects.cache
+C:\Users\Angel Barrueto\Documents\Taller Viernes\IPS MAS SALUD Y VIDA\presentacion\obj\Debug\presentacion.csproj.CoreCompileInputs.cache
+C:\Users\Angel Barrueto\Documents\Taller Viernes\IPS MAS SALUD Y VIDA\presentacion\obj\Debug\presentacion.csproj.CopyComplete
+C:\Users\Angel Barrueto\Documents\Taller Viernes\IPS MAS SALUD Y VIDA\presentacion\obj\Debug\presentacion.exe
+C:\Users\Angel Barrueto\Documents\Taller Viernes\IPS MAS SALUD Y VIDA\presentacion\obj\Debug\presentacion.pdb
