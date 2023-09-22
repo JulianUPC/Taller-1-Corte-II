@@ -27,8 +27,6 @@ namespace Datos
             paciente.Tipo_Afiliacion = bool.Parse(datos[2]);
             paciente.Salario_Devengado = float.Parse(datos[3]);
             paciente.Valor_ServicioPrestado = float.Parse(datos[4]);
-            paciente.Tarifa = float.Parse(datos[5]);
-            paciente.Tope_Maximo = float.Parse(datos[6]);
             return paciente;
         }
 
