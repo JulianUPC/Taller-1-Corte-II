@@ -18,7 +18,7 @@ namespace Entidades
         {
             Cuota_ModeradaContributivo = Valor_ServicioPrestado * Calcular_Tarifa();
         }
-
+        float Tarifa;
         public float Calcular_Tarifa()
         {
             if(Salario()== 1)

@@ -22,8 +22,8 @@ namespace presentacion
                     Console.SetCursorPosition(10, 7); Console.WriteLine("2. Visualizar todas las liquidaciones realizadas ");
                     Console.SetCursorPosition(10, 8); Console.WriteLine("3. Consulta por tipo de afiliación ");
                     Console.SetCursorPosition(10, 9); Console.WriteLine("4. Consulta las cuotas moderadoras liquidadas y el valor total liquidado");
-                    Console.SetCursorPosition(10, 10); Console.WriteLine("5.Consulta de liquidaciones realizadas en un mes y año especifico ");
-                    Console.SetCursorPosition(10, 11); Console.WriteLine("5. Consultar Nombre de Paciente ");
+                    Console.SetCursorPosition(10, 10); Console.WriteLine("5. Consulta de liquidaciones realizadas en un mes y año especifico ");
+                    Console.SetCursorPosition(10, 11); Console.WriteLine("6. Consultar Nombre de Paciente ");
                     Console.SetCursorPosition(10, 12); Console.WriteLine("0. Salir");
                     Console.SetCursorPosition(10, 13); Console.Write("Opcion: "); Op = int.Parse(Console.ReadLine());
                     switch (Op)
@@ -45,6 +45,10 @@ namespace presentacion
                             break;
 
                         case 5:
+                            Consultar_Liquidacion();
+                            break;
+
+                        case 6:
                             Consulta_Paciente();
                             break;
 
@@ -82,6 +86,11 @@ namespace presentacion
 
         }
         public void Consulta_Cuotas()
+        {
+
+        }
+
+        public void Consultar_Liquidacion()
         {
 
         }
