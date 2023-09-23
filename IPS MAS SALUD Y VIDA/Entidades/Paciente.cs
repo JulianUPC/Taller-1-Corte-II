@@ -11,11 +11,11 @@ namespace Entidades
         public Paciente(){ }
         public string N_Liquidacion { get; set; }
         public string ID_Paciente { get; set; }
-        public bool Tipo_Afiliacion { get; set; }
+        public string Tipo_Afiliacion { get; set; }
         public float Salario_Devengado { get; set; }
         public float Valor_ServicioPrestado { get; set; }
 
-        public Paciente(string n_Liquidacion, string iD_Paciente, bool tipo_Afiliacion, float salario_Devengado, float valor_ServicioPrestado)
+        public Paciente(string n_Liquidacion, string iD_Paciente, string tipo_Afiliacion, float salario_Devengado, float valor_ServicioPrestado)
         {
             N_Liquidacion = n_Liquidacion;
             ID_Paciente = iD_Paciente;

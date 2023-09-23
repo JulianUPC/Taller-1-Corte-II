@@ -11,15 +11,18 @@ namespace Logica
 {
     public class Liquidacion_de_Cuota
     {
+        Paciente paciente = new Paciente();
         Archivos archivos = new Archivos();
         List<Paciente> pacientes;
+        List<Régimen_contributivo> contributivos;
+        List<Régimen_Subsidiado> subsidiados;
 
         public Liquidacion_de_Cuota()
         {
             Refresh();
         }
 
-        public void GuardarLiquidacion(Paciente paciente)
+        public void GuardarLiquidacion(Paciente paciente, Régimen_contributivo régimen_Contributivo, Régimen_Subsidiado régimen_Subsidiado)
         {
             bool encontrado = false;
             try
@@ -28,8 +31,9 @@ namespace Logica
                 {
                     if (pacientes == null)
                     {
+                        archivos.GuardarLiquidacionRC(régimen_Contributivo);
+                        archivos.GuardarLiquidacionRS(régimen_Subsidiado);
                         archivos.GuardarLiquidacion(paciente);
-                        Console.WriteLine("iNFORMACION guardado correctamente");
                     }
                     else
                     {
@@ -37,15 +41,17 @@ namespace Logica
                         {
 
                             if (paciente.ID_Paciente == item.ID_Paciente)
-                            {
-                                Console.WriteLine("Informacion ya existe");
+                            {                               
                                 encontrado = true;
+                                Console.SetCursorPosition(10, 20); Console.WriteLine("El paciente que intenta registrar ya se existe");
                             }
                         }
                         if (encontrado == false)
                         {
+                            archivos.GuardarLiquidacionRC(régimen_Contributivo);
+                            archivos.GuardarLiquidacionRS(régimen_Subsidiado);
                             archivos.GuardarLiquidacion(paciente);
-                            Console.WriteLine("informacion guardado correctamente");
+                            Console.SetCursorPosition(10, 20); Console.WriteLine("Registro realizado con exito...");                        
                         }
                     }
                 }
@@ -60,12 +66,34 @@ namespace Logica
                 Console.WriteLine("Error al guardar informacion");
             }
         }
-
         void Refresh()
         {
             try
             {
                 pacientes = archivos.GetAll();
+            }
+            catch (Exception)
+            {
+
+            }
+        }
+        void Refresh_RC()
+        {
+            try
+            {
+                contributivos = archivos.GetAll_RC();
+            }
+            catch (Exception)
+            {
+
+            }
+        }
+
+        void Refresh_RS()
+        {
+            try
+            {
+                subsidiados = archivos.GetAll_RS();
             }
             catch (Exception)
             {
@@ -82,6 +110,28 @@ namespace Logica
             }
 
             return pacientes;
+        }
+
+        public List<Régimen_contributivo> GetAll_RC()
+        {
+            Refresh_RC();
+            if (contributivos == null)
+            {
+                return null;
+            }
+
+            return contributivos;
+        }
+
+        public List<Régimen_Subsidiado> GetAll_RS()
+        {
+            Refresh_RS();
+            if (subsidiados == null)
+            {
+                return null;
+            }
+
+            return subsidiados;
         }
     }
 }
