@@ -37,10 +37,12 @@ namespace Datos
             var paciente = new Paciente();
             string[] datos = linea.Split(';');
             paciente.N_Liquidacion = datos[0];
-            paciente.ID_Paciente = datos[1];
-            paciente.Tipo_Afiliacion = datos[2];
-            paciente.Salario_Devengado = float.Parse(datos[3]);
-            paciente.Valor_ServicioPrestado = float.Parse(datos[4]);
+            paciente.F_Liquidacion = DateTime.Parse(datos[1]);
+            paciente.ID_Paciente = datos[2];
+            paciente.Nombre_Paciente = datos[3];
+            paciente.Tipo_Afiliacion = datos[4];
+            paciente.Salario_Devengado = float.Parse(datos[5]);
+            paciente.Valor_ServicioPrestado = int.Parse(datos[6]);
             return paciente;
         }
         public Régimen_contributivo Mapper_RC(string linea)
@@ -110,7 +112,7 @@ namespace Datos
             try
             {
                 List<Régimen_Subsidiado> régimen_Subsidiados = new List<Régimen_Subsidiado>();
-                StreamReader reader = new StreamReader(lugar);
+                StreamReader reader = new StreamReader(lugar_RS);
                 while (!reader.EndOfStream)
                 {
                     régimen_Subsidiados.Add(Mapper_RS(reader.ReadLine()));

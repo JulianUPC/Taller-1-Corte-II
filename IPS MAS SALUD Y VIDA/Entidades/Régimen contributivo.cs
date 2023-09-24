@@ -23,6 +23,7 @@ namespace Entidades
         }
         public void Calcular_Cuota()
         {
+         
             Cuota_ModeradaContributivo = Valor_ServicioPrestado * Tarifa_Aplicada;
             Cuota_Real = Cuota_ModeradaContributivo;
         }
