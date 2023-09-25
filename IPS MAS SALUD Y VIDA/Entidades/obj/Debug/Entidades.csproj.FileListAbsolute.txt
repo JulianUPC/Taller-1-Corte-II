@@ -16,3 +16,9 @@ C:\Users\Angel Barrueto\Documents\IPS MAS SALUD Y VIDA\Entidades\obj\Debug\Entid
 C:\Users\Angel Barrueto\Documents\IPS MAS SALUD Y VIDA\Entidades\obj\Debug\Entidades.csproj.CoreCompileInputs.cache
 C:\Users\Angel Barrueto\Documents\IPS MAS SALUD Y VIDA\Entidades\obj\Debug\Entidades.dll
 C:\Users\Angel Barrueto\Documents\IPS MAS SALUD Y VIDA\Entidades\obj\Debug\Entidades.pdb
+C:\Users\PC\Documents\Programacion\Taller-1-Corte-II\IPS MAS SALUD Y VIDA\Entidades\bin\Debug\Entidades.dll
+C:\Users\PC\Documents\Programacion\Taller-1-Corte-II\IPS MAS SALUD Y VIDA\Entidades\bin\Debug\Entidades.pdb
+C:\Users\PC\Documents\Programacion\Taller-1-Corte-II\IPS MAS SALUD Y VIDA\Entidades\obj\Debug\Entidades.csproj.AssemblyReference.cache
+C:\Users\PC\Documents\Programacion\Taller-1-Corte-II\IPS MAS SALUD Y VIDA\Entidades\obj\Debug\Entidades.csproj.CoreCompileInputs.cache
+C:\Users\PC\Documents\Programacion\Taller-1-Corte-II\IPS MAS SALUD Y VIDA\Entidades\obj\Debug\Entidades.dll
+C:\Users\PC\Documents\Programacion\Taller-1-Corte-II\IPS MAS SALUD Y VIDA\Entidades\obj\Debug\Entidades.pdb

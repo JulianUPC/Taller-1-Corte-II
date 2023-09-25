@@ -25,3 +25,12 @@ C:\Users\Angel Barrueto\Documents\IPS MAS SALUD Y VIDA\Datos\obj\Debug\Datos.csp
 C:\Users\Angel Barrueto\Documents\IPS MAS SALUD Y VIDA\Datos\obj\Debug\Datos.csproj.CopyComplete
 C:\Users\Angel Barrueto\Documents\IPS MAS SALUD Y VIDA\Datos\obj\Debug\Datos.dll
 C:\Users\Angel Barrueto\Documents\IPS MAS SALUD Y VIDA\Datos\obj\Debug\Datos.pdb
+C:\Users\PC\Documents\Programacion\Taller-1-Corte-II\IPS MAS SALUD Y VIDA\Datos\bin\Debug\Datos.dll
+C:\Users\PC\Documents\Programacion\Taller-1-Corte-II\IPS MAS SALUD Y VIDA\Datos\bin\Debug\Datos.pdb
+C:\Users\PC\Documents\Programacion\Taller-1-Corte-II\IPS MAS SALUD Y VIDA\Datos\bin\Debug\Entidades.dll
+C:\Users\PC\Documents\Programacion\Taller-1-Corte-II\IPS MAS SALUD Y VIDA\Datos\bin\Debug\Entidades.pdb
+C:\Users\PC\Documents\Programacion\Taller-1-Corte-II\IPS MAS SALUD Y VIDA\Datos\obj\Debug\Datos.csproj.AssemblyReference.cache
+C:\Users\PC\Documents\Programacion\Taller-1-Corte-II\IPS MAS SALUD Y VIDA\Datos\obj\Debug\Datos.csproj.CoreCompileInputs.cache
+C:\Users\PC\Documents\Programacion\Taller-1-Corte-II\IPS MAS SALUD Y VIDA\Datos\obj\Debug\Datos.csproj.CopyComplete
+C:\Users\PC\Documents\Programacion\Taller-1-Corte-II\IPS MAS SALUD Y VIDA\Datos\obj\Debug\Datos.dll
+C:\Users\PC\Documents\Programacion\Taller-1-Corte-II\IPS MAS SALUD Y VIDA\Datos\obj\Debug\Datos.pdb

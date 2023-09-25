@@ -1,6 +1,7 @@
 ﻿using Entidades;
 using Logica;
 using System;
+using System.Collections;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Globalization;
@@ -91,7 +92,7 @@ namespace presentacion
             } while (Op != 0);
         }
 
-        char Tipo_Afiliacion;
+        
         public void Registrar_Informacion()
         {
             Informacion_Llenar();
@@ -126,7 +127,6 @@ namespace presentacion
         float Limite;       
         public void Leer_Datos()
         {
-            float Valor;
             string dia,mes,año;
             DateTime fecha;
 
@@ -251,12 +251,12 @@ namespace presentacion
             int i = 7;
             if (liq_Cuota.GetAll() == null)
             {
-                Console.SetCursorPosition(10, 10); Console.WriteLine("No hay establecimientos registrados");
+                Console.SetCursorPosition(10, 10); Console.WriteLine("No hay Paciente registrados");
                 Console.ReadKey();
             }
             else
             {
-                Console.SetCursorPosition(1, 5); Console.WriteLine("Consulta de establecimientos");
+                Console.SetCursorPosition(1, 5); Console.WriteLine("Consulta de paciente");
                 Console.SetCursorPosition(1, 6); Console.WriteLine("|  N.IDENTIFIACION  |  T. AFILIACION  | SALARIO | V. SERVICIO | TARIFA APLICADA | VALOR REAL | TOPE MAXIMO | CUOTA MODERADA |");
                 Console.SetCursorPosition(1, 7); Console.WriteLine("|                   |                 |         |             |                 |            |             |                |");
                 Console.SetCursorPosition(1, 8); Console.WriteLine("|                   |                 |         |             |                 |            |             |                |");
@@ -302,9 +302,45 @@ namespace presentacion
             }
         }
         public void Consulta_Afiliacion()
-        { 
+        {
+            int contador = 0;
+            string auxiliar;
+            //int contadorS = 0;
+            Console.Clear();
+            Console.SetCursorPosition(20, 5); Console.WriteLine("Tipo de afilicaion");
+            Console.SetCursorPosition(10, 6); Console.WriteLine("|------------------------------------------------------");
+            Console.SetCursorPosition(10, 8); Console.WriteLine("|Tipo de Afiliacion S / C");
+            Console.SetCursorPosition(10, 9); Console.WriteLine("|(S) Subsidiado");
+            Console.SetCursorPosition(10, 10); Console.WriteLine("|(C) Contributivo");
+            Console.SetCursorPosition(10, 11); Console.WriteLine("|Tipo: ");
+            do
+            {
+                Console.SetCursorPosition(17, 11); auxiliar = Console.ReadLine().ToUpper();
+            } while (auxiliar != "S" && auxiliar != "C");
+            foreach (var item in liq_Cuota.GetAll())
+            {
+                if (item.Tipo_Afiliacion == "Contributivo")
+                {
+                    contador++;
+                }
+                else
+                {
+                    contador++;
+                }
+            }
+            if (auxiliar == "S")
+            {
+                Console.SetCursorPosition(10, 14); Console.WriteLine("Total liquidaciones Subsidiado: ", contador);
+            }
+            else
+            {
+                Console.SetCursorPosition(10, 14); Console.WriteLine("Total liquidaciones Contributivo: ", contador);
+            }
+            Console.ReadKey();
 
         }
+ 
+
         public void Consulta_Cuotas()
         {
 

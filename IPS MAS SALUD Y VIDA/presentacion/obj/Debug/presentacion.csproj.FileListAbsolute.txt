@@ -49,3 +49,17 @@ C:\Users\Angel Barrueto\Documents\IPS MAS SALUD Y VIDA\presentacion\obj\Debug\pr
 C:\Users\Angel Barrueto\Documents\IPS MAS SALUD Y VIDA\presentacion\obj\Debug\presentacion.csproj.CopyComplete
 C:\Users\Angel Barrueto\Documents\IPS MAS SALUD Y VIDA\presentacion\obj\Debug\presentacion.exe
 C:\Users\Angel Barrueto\Documents\IPS MAS SALUD Y VIDA\presentacion\obj\Debug\presentacion.pdb
+C:\Users\PC\Documents\Programacion\Taller-1-Corte-II\IPS MAS SALUD Y VIDA\presentacion\bin\Debug\presentacion.exe.config
+C:\Users\PC\Documents\Programacion\Taller-1-Corte-II\IPS MAS SALUD Y VIDA\presentacion\bin\Debug\presentacion.exe
+C:\Users\PC\Documents\Programacion\Taller-1-Corte-II\IPS MAS SALUD Y VIDA\presentacion\bin\Debug\presentacion.pdb
+C:\Users\PC\Documents\Programacion\Taller-1-Corte-II\IPS MAS SALUD Y VIDA\presentacion\bin\Debug\Entidades.dll
+C:\Users\PC\Documents\Programacion\Taller-1-Corte-II\IPS MAS SALUD Y VIDA\presentacion\bin\Debug\Logica.dll
+C:\Users\PC\Documents\Programacion\Taller-1-Corte-II\IPS MAS SALUD Y VIDA\presentacion\bin\Debug\Datos.dll
+C:\Users\PC\Documents\Programacion\Taller-1-Corte-II\IPS MAS SALUD Y VIDA\presentacion\bin\Debug\Entidades.pdb
+C:\Users\PC\Documents\Programacion\Taller-1-Corte-II\IPS MAS SALUD Y VIDA\presentacion\bin\Debug\Logica.pdb
+C:\Users\PC\Documents\Programacion\Taller-1-Corte-II\IPS MAS SALUD Y VIDA\presentacion\bin\Debug\Datos.pdb
+C:\Users\PC\Documents\Programacion\Taller-1-Corte-II\IPS MAS SALUD Y VIDA\presentacion\obj\Debug\presentacion.csproj.AssemblyReference.cache
+C:\Users\PC\Documents\Programacion\Taller-1-Corte-II\IPS MAS SALUD Y VIDA\presentacion\obj\Debug\presentacion.csproj.CoreCompileInputs.cache
+C:\Users\PC\Documents\Programacion\Taller-1-Corte-II\IPS MAS SALUD Y VIDA\presentacion\obj\Debug\presentacion.csproj.CopyComplete
+C:\Users\PC\Documents\Programacion\Taller-1-Corte-II\IPS MAS SALUD Y VIDA\presentacion\obj\Debug\presentacion.exe
+C:\Users\PC\Documents\Programacion\Taller-1-Corte-II\IPS MAS SALUD Y VIDA\presentacion\obj\Debug\presentacion.pdb
