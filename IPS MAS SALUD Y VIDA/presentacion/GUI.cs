@@ -330,11 +330,11 @@ namespace presentacion
             }
             if (auxiliar == "S")
             {
-                Console.SetCursorPosition(10, 14); Console.WriteLine("Total liquidaciones Subsidiado: ", contador);
+                Console.SetCursorPosition(10, 14); Console.WriteLine("Total liquidaciones Subsidiado: "+ contador);
             }
             else
             {
-                Console.SetCursorPosition(10, 14); Console.WriteLine("Total liquidaciones Contributivo: ", contador);
+                Console.SetCursorPosition(10, 14); Console.WriteLine("Total liquidaciones Contributivo: "+ contador);
             }
             Console.ReadKey();
 
@@ -352,7 +352,67 @@ namespace presentacion
         }
         public void Consulta_Paciente()
         {
+            Console.Clear();
+            int i = 7;
+            Console.Write("Ingresa el nombre a filtrar: ");
+            string nombreFiltro = Console.ReadLine();
 
+            // Filtrar liquidaciones por nombre
+            var liquidacionesFiltradas = liq_Cuota.GetAll().Where(item => item.Nombre_Paciente.Contains(nombreFiltro)).ToList();
+
+            if (liquidacionesFiltradas.Count == 0)
+            {
+                Console.SetCursorPosition(10, 10); Console.WriteLine("No hay Paciente registrados");
+                Console.ReadKey();
+            }
+            else
+            {
+                Console.SetCursorPosition(1, 5); Console.WriteLine("Consulta de paciente");
+                Console.SetCursorPosition(1, 6); Console.WriteLine("|  N.IDENTIFIACION  |  T. AFILIACION  | SALARIO | V. SERVICIO | TARIFA APLICADA | VALOR REAL | TOPE MAXIMO | CUOTA MODERADA |");
+                Console.SetCursorPosition(1, 7); Console.WriteLine("|                   |                 |         |             |                 |            |             |                |");
+                Console.SetCursorPosition(1, 8); Console.WriteLine("|                   |                 |         |             |                 |            |             |                |");
+                Console.SetCursorPosition(1, 9); Console.WriteLine("|                   |                 |         |             |                 |            |             |                |");
+                Console.SetCursorPosition(1, 10); Console.WriteLine("|                   |                 |         |             |                 |            |             |                |");
+                Console.SetCursorPosition(1, 11); Console.WriteLine("|                   |                 |         |             |                 |            |             |                |");
+                Console.SetCursorPosition(1, 12); Console.WriteLine("|                   |                 |         |             |                 |            |             |                |");
+                Console.SetCursorPosition(1, 13); Console.WriteLine("|                   |                 |         |             |                 |            |             |                |");
+                Console.SetCursorPosition(1, 14); Console.WriteLine("|                   |                 |         |             |                 |            |             |                |");
+                Console.SetCursorPosition(1, 15); Console.WriteLine("|                   |                 |         |             |                 |            |             |                |");
+                Console.SetCursorPosition(1, 16); Console.WriteLine("|                   |                 |         |             |                 |            |             |                |");
+                Console.SetCursorPosition(1, 17); Console.WriteLine("|                   |                 |         |             |                 |            |             |                |");
+
+                foreach (var item in liquidacionesFiltradas)
+                {
+                    Console.SetCursorPosition(4, i); Console.Write(item.N_Liquidacion);
+                    Console.SetCursorPosition(24, i); Console.Write(item.Tipo_Afiliacion);
+                    Console.SetCursorPosition(41, i); Console.Write(item.Salario_Devengado);
+                    Console.SetCursorPosition(51, i); Console.Write(item.Valor_ServicioPrestado.ToString());
+                    if (item.Tipo_Afiliacion == "Contributivo")
+                    {
+                        foreach (var itemRC in liq_Cuota.GetAll_RC())
+                        {
+                            Console.SetCursorPosition(65, i); Console.Write(itemRC.Tarifa_Aplicada);
+                            Console.SetCursorPosition(83, i); Console.Write(itemRC.Cuota_Real);
+                            Console.SetCursorPosition(96, i); Console.Write(itemRC.Tope_Maximo);
+                            Console.SetCursorPosition(110, i); Console.Write(itemRC.Cuota_ModeradaContributivo);
+                        }
+                    }
+                    else
+                    {
+                        foreach (var itemRS in liq_Cuota.GetAll_RS())
+                        {
+                            Console.SetCursorPosition(65, i); Console.Write(itemRS.Tarifa_Aplicada);
+                            Console.SetCursorPosition(83, i); Console.Write(itemRS.Cuota_Real);
+                            Console.SetCursorPosition(96, i); Console.Write(itemRS.Tope_Maximo);
+                            Console.SetCursorPosition(110, i); Console.Write(itemRS.Cuota_ModeradaSubsidiado);
+                        }
+                    }
+                    i++;
+                }
+
+                Console.SetCursorPosition(3, i * 3); Console.WriteLine("Pulse cualquier tecla para volver al menú");
+                Console.ReadKey();
+            }
         }
 
         public void Eliminar_Liquidacion()
