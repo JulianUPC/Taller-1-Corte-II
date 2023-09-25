@@ -2,6 +2,7 @@
 using Entidades;
 using System;
 using System.Collections.Generic;
+using System.Globalization;
 using System.IO;
 using System.Linq;
 using System.Text;
@@ -66,6 +67,70 @@ namespace Logica
                 Console.WriteLine("Error al guardar informacion");
             }
         }
+        bool encontrado = false;
+        public void Eliminar_RegimenC(string N_Liquidacion)
+        {
+            try
+            {
+                foreach (var itemRC in GetAll_RC())
+                {
+                    if (N_Liquidacion == itemRC.N_Liquidacion)
+                    {
+                        contributivos.Remove(itemRC);
+                        archivos.Eliminar_RegimenC(contributivos);
+                        Console.WriteLine("regimen eliminado correctamente");
+                    }
+                }
+            }
+            catch (Exception)
+            {
+
+            }
+        }
+        public void Eliminar_RegimenS(string N_Liquidacion)
+        {
+            try
+            {
+                foreach (var itemRS in GetAll_RS())
+                {
+                    if (N_Liquidacion == itemRS.N_Liquidacion)
+                    {
+                        subsidiados.Remove(itemRS);
+                        archivos.Eliminar_RegimenS(subsidiados);
+                    }
+                }
+            }
+            catch (Exception)
+            {
+
+            }
+        }
+        public void Eliminar_Paciente(string N_Liquidacion)
+        {
+            
+            try
+            {
+                foreach (var item in GetAll())
+                {
+                    if (N_Liquidacion == item.N_Liquidacion)
+                    {
+                        pacientes.Remove(item);
+                        archivos.EliminarPaciente(pacientes);
+                        Console.WriteLine("paciente eliminado correctamente");
+                    }                 
+                }
+                if (encontrado == false)
+                {
+                    Console.WriteLine("Establecimiento no existe");
+                }
+                
+            }       
+            catch(Exception)
+            {
+                return;
+            }
+        }
+
         void Refresh()
         {
             try
@@ -133,5 +198,6 @@ namespace Logica
 
             return subsidiados;
         }
+        
     }
 }

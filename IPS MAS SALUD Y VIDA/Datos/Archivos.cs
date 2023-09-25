@@ -3,6 +3,7 @@ using System;
 using System.Collections.Generic;
 using System.IO;
 using System.Linq;
+using System.Net.NetworkInformation;
 using System.Text;
 using System.Threading.Tasks;
 
@@ -67,8 +68,72 @@ namespace Datos
             régimen_Subsidiado.Tope_Maximo = datos[4];
             return régimen_Subsidiado;
         }
-        
 
+        public void EliminarPaciente(List<Paciente> paciente)
+        {
+            string lugartemp = "Temporal.txt";                     
+            try
+            {
+                StreamWriter sw = new StreamWriter(lugartemp, true);                             
+                foreach (var item in paciente)
+                {
+                    sw.WriteLine(item.ToString());
+                }                               
+                sw.Close();                         
+                File.Delete(lugar);                                
+                File.Move(lugartemp, lugar);                               
+            }
+            catch (Exception)
+            {
+                throw;
+            }
+        }
+
+        public void Eliminar_RegimenC(List<Régimen_contributivo> contributivos)
+        {
+            string lugartempRC = "TemporalRC.txt";
+            StreamWriter swC = new StreamWriter(lugartempRC, true);
+            foreach (var itemRC in contributivos)
+            {
+                swC.WriteLine(itemRC.ToString());
+            }
+            swC.Close();
+            File.Delete(lugar_RC);
+            File.Move(lugartempRC, lugar_RC);
+        }
+        public void Eliminar_RegimenS(List<Régimen_Subsidiado> subsidiados)
+        {
+            
+            string lugartempRS = "TemporalRS.txt";
+            StreamWriter swS = new StreamWriter(lugartempRS, true);
+            foreach (var itemRS in subsidiados)
+            {
+                swS.WriteLine(itemRS.ToString());
+            }
+            swS.Close();
+            File.Delete(lugar_RS);
+            File.Move(lugartempRS, lugar_RS);
+        }
+        public void ModificarPaciente(List<Paciente> pacientes)
+        {
+            string rutatemp = "Temporal.txt";
+            try
+            {
+                StreamWriter sw = new StreamWriter(rutatemp, true);
+                foreach (var item in pacientes)
+                {
+                    sw.WriteLine(item.ToString());
+                }
+                sw.Close();
+                File.Delete(lugar);
+                File.Move(rutatemp, lugar);
+            }
+            catch (Exception)
+            {
+
+                throw;
+            }
+        }
         public List<Paciente> GetAll()
         {
             try
